@@ -1,0 +1,45 @@
+SELECT *
+FROM customers;
+
+SELECT *
+FROM employees;
+
+SELECT supplierid, companyname, country, phone
+FROM suppliers;
+
+SELECT productid, productname, unitprice, reorderlevel
+FROM products;
+
+SELECT DISTINCT city, country
+FROM customers;
+
+SELECT DISTINCT region
+FROM suppliers;
+
+SELECT COUNT(*)
+FROM products;
+
+SELECT COUNT(*)
+FROM orders;
+
+SELECT *
+FROM orders;
+
+SELECT COUNT (DISTINCT city)
+FROM suppliers;
+
+SELECT COUNT (DISTINCT productid)
+FROM order_details;
+
+SELECT customerid, shippeddate
+FROM orders;
+
+SELECT customerid, shippeddate - orderdate
+FROM orders;
+
+SELECT *
+FROM orders;
+
+SELECT orderid, unitprice*quantity
+FROM order_details;
+
